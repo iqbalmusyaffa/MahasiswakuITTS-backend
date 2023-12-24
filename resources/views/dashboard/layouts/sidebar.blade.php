@@ -17,10 +17,6 @@
             <li class=" {{ Request::is('dashboard/companycategory*') ? 'active' : false }} "><a
                     href="{{ route('companycategory.index') }}"><i class="la la-list-alt"></i> Manajemen Kategori Perusahaan </a></li>
 
-            <li class=" {{ Request::is('dashboard/companycategory*') ? 'active' : false }} "><a
-                        href="{{ route('companycategory.index') }}"><i class="la la-list-alt"></i> Manajemen Magang </a></li>
-            <li class=" {{ Request::is('dashboard/companycategory*') ? 'active' : false }} "><a
-                            href="{{ route('companycategory.index') }}"><i class="la la-list-alt"></i> Manajemen Kategori Magang </a></li>
             <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();"><i class="la la-sign-out"></i>Logout</a>
             </li>

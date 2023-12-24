@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="big-column col-xl-3 col-lg-3 col-md-12">
                     <div class="footer-column about-widget">
-                        <div class="logo"><a href="#"><img src="images/logo-didamelid-2.png" alt=""></a></div>
+                        <div class="logo"><a href="#"><h2 class="text-black">MAHASISWAKUITTS</h2></a></div>
                         <p class="phone-num"><span>Hubungi Kami </span><a href="tel:02238828312">02238828312</a></p>
                         <p class="address">Jl. Ketintang No.156, Ketintang, Kec. Gayungan, Surabaya, Jawa Timur 60231
                         </p>
@@ -42,11 +42,7 @@
                                 <div class="widget-content">
                                     <div class="download-btns">
                                         <div class="text">Klik di sini untuk menginstal</div>
-                                        <button onclick="alert('Cooming Soon :) ')" class="mb-2"><img
-                                                src="{{ asset('images/icons/apple-2.png') }}" alt="">
-                                        </button>
-
-                                        <button onclick="alert('Cooming Soon :) ')">
+                                        <button onclick="alert('Segera Hadir :) ')">
                                             <img src="{{ asset('images/icons/google-2.png') }}" alt="">
                                         </button>
                                         {{-- <a href="" onclick="alert('Cooming Soon :) ')"><img

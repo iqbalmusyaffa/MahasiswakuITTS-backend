@@ -6,8 +6,7 @@
             <!--Nav Outer -->
             <div class="nav-outer">
                 <div class="logo-box">
-                    <div class="logo"><a href="/"><img src="{{ asset('images/logo-didamelid-2.png') }}" alt=""
-                                title=""></a></div>
+                    <div class="logo"><a href="/"><h4 class="text-black">MAHASISWAKUITTS</h4></a></div>
                 </div>
 
             </div>
@@ -34,14 +33,6 @@
                             class="{{ Request::is('dashboard/companycategory/*') ? 'active' : false }} {{ Request::is('dashboard/companycategory') ? 'active' : false }} ">
                             <a href="{{ route('company.index') }}"><i class="la la-list-alt"></i> Manajemen Kategori Perusahaan
                                 </a>
-                        </li>
-                        <li
-                        class="{{ Request::is('dashboard/company/*') ? 'active' : false }} {{ Request::is('dashboard/company') ? 'active' : false }} ">
-                        <a href="{{ route('company.index') }}"><i class="la la-building"></i> Manajemen Magang </a>
-                    </li>
-                    <li
-                            class="{{ Request::is('dashboard/company/*') ? 'active' : false }} {{ Request::is('dashboard/company') ? 'active' : false }} ">
-                            <a href="{{ route('company.index') }}"><i class="la la-building"></i> Manajemen Kategori Magang </a>
                         </li>
                         <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();"><i class="la la-sign-out"></i>Logout</a>

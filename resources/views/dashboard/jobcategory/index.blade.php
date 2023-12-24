@@ -5,8 +5,7 @@
 <section class="user-dashboard">
     <div class="dashboard-outer">
         <div class="upper-title-box">
-            <h3>Manage Category Jobs</h3>
-            <div class="text">Ready to jump back in?</div>
+            <h3>Kategori</h3>
             @if(session()->has('success'))
             <div class="alert alert-success" role="alert">
                 {{ session('success') }}
@@ -16,7 +15,7 @@
 
 
         <div class="form-group col-lg-12 col-md-12 mb-2">
-            <a href="{{ route('category.create') }}" class="theme-btn btn-style-one">Add Category</a>
+            <a href="{{ route('category.create') }}" class="theme-btn btn-style-one">Tambah Kategori</a>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -24,7 +23,6 @@
                 <div class="ls-widget">
                     <div class="tabs-box">
                         <div class="widget-title">
-                            <h4>My Job Listings</h4>
                         </div>
 
                         <div class="widget-content">
@@ -32,7 +30,7 @@
                                 <table class="default-table manage-job-table">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
+                                            <th>Nama kategori</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -51,7 +49,7 @@
                                                     <ul class="option-list">
 
                                                         <a href="{{ route('category.edit',$item->slug) }}">
-                                                            <li><button data-text="Reject Aplication"><span
+                                                            <li><button data-text="Edit Kategori"><span
                                                                         class="la la-pencil"></span></button></li>
                                                         </a>
 
@@ -60,7 +58,7 @@
                                                             @method('delete')
                                                             @csrf
 
-                                                            <li><button data-text="Delete Aplication"
+                                                            <li><button data-text="Hapus Kategori"
                                                                     onClick="return confirm('Are you sure?')"><span
                                                                         class="la la-trash"></span></button></li>
                                                         </form>

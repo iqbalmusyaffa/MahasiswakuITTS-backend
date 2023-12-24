@@ -6,10 +6,10 @@
 
             <div class="logo-box">
                 @if(Request::is('/'))
-                <div class="logo"><a href="/"><img src="{{ asset('images/logo-didamelid-1.png') }}" alt="" title=""></a>
+                <div class="logo"><a href="/"><h2 class="text-white">MAHASISWAKUITTS</h2></a>
                 </div>
                 @else
-                <div class="logo"><a href="/"><img src="{{ asset('images/logo-didamelid-2.png') }}" alt="" title=""></a>
+                <div class="logo"><a href="/"><h2 class="text-white">MAHASISWAKUITTS</h2></a>
                 </div>
                 @endif
             </div>
@@ -19,10 +19,7 @@
                         <a href="/">Beranda</a>
                     </li>
                     <li class="">
-                        <a href="/job">Lowongan Pekerjaan</a>
-                    </li>
-                    <li class="">
-                        <a href="/job">Lowongan Magang</a>
+                        <a href="/job">Informasi Magang dan Pekerjaan</a>
                     </li>
 
 
@@ -75,7 +72,7 @@
 
         <div class="main-box">
             <div class="logo-box">
-                <div class="sticky-logo"><a href="index.html"><img src="images/logo.svg" alt="" title=""></a></div>
+                <div class="sticky-logo"><a href="index.html"><h2 class="text-black">MAHASISWAKUITTS</h2></a></div>
             </div>
 
             <!--Keep This Empty / Menu will come through Javascript-->
@@ -87,7 +84,7 @@
 
 <!-- Mobile Header -->
 <div class="mobile-header">
-    <div class="logo"><a href="/"><img src="images/logo-didamelid-2.png" alt="" title=""></a></div>
+    <div class="logo"><a href="/"><h2 class="text-black">MAHASISWAKUITTS</h2></a></div>
 
     <!--Nav Box-->
     <div class="nav-outer clearfix">

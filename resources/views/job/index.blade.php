@@ -95,8 +95,6 @@
                   <span class="company-logo"><img src="{{ asset('storage/'.$item->company->logo) }}" alt=""></span>
                   <h4><a href="/job/{{ $item->slug }}">{{ $item->title }}</a></h4>
                   <ul class="job-info">
-                    <li><a href="job?category={{$item->category->slug  }}"><span class="icon flaticon-briefcase"></span>
-                        {{ ucfirst($item->category->name) }}</a></li>
                     <li><a href="/job?location={{ $item->location }}"><span class="icon flaticon-map-locator"></span> {{
                         $item->location }}</a></li>
                     <li><span class="icon flaticon-clock-3"></span> {{ $item->created_at->diffForHumans() }}</li>

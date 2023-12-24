@@ -3,12 +3,12 @@
 @section('content')
 <!-- Banner Section-->
 <section class="banner-section-four -type-16"
-    style="background-image: url({{ asset('images/bg-home-didamelid.jpg') }});">
+    style="background-image: url({{ asset('images/bg-home.jpg') }});">
     <div class="auto-container">
         <div class="content-box">
             <div class="title-box wow fadeInUp" data-wow-delay="500ms">
-                <h3>Langkah terbaik awal karirmu</h3>
-                <p>Temukan lebih dari 10.000 pekerjaan di situs ini</p>
+                <h3>Langkah terbaik Untuk Menmilih Karirmu</h3>
+                <p>Temukan lebih dari 100.000 pekerjaan dan magang di situs ini</p>
             </div>
 
             <!-- Job Search Form -->
@@ -88,9 +88,6 @@
                                     <h4><a href="job/{{ $item->slug }}">{{ Str::of($item->title. ' - '.
                                             $item->company->name)->limit(58 , '...') }} </a></h4>
                                     <ul class="job-info">
-                                        <li><a href="job?category={{ $item->category->slug }}"><span
-                                                    class="icon flaticon-briefcase"></span>{{ucfirst($item->category->name)}}</a>
-                                        </li>
                                         <li><a href="job?location={{ $item->location }}"><span
                                                     class="icon flaticon-map-locator"></span> {{ $item->location }}</a>
                                         </li>

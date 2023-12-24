@@ -5,7 +5,7 @@
     <div class="row justify-content-center d-flex align-items-center" style="height:80vh;">
         <div class="col-md-6">
             <form method="POST" action="{{ route('register') }}">
-                <h1 class="h3 mb-3 fw-normal f-bo text-center">Form Registration</h1>
+                <h1 class="h3 mb-3 fw-normal f-bo text-center">Registration</h1>
                 @csrf
                 <div class="form-floating">
                     <input type="text" class="form-control rounded-top @error('name') is-invalid @enderror" id="name"
