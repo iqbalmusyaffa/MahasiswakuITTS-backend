@@ -18,8 +18,8 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'name' => 'Fahmy Fauzi',
-            'email' => 'fahmyfauzii@gmail.com',
+            'name' => 'Iqbal Musyaffa',
+            'email' => 'iqbalmusyaffa122@gmail.com',
             'nim' => '1204222011',
             'programstudi' => 'sisteminformasi',
             // 'email_verified_at' => now(),
