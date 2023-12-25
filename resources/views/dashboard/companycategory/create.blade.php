@@ -6,8 +6,7 @@
 <section class="user-dashboard">
     <div class="dashboard-outer">
         <div class="upper-title-box">
-            <h3>Create Company Category!</h3>
-            <div class="text">Ready to jump back in?</div>
+            <h3>Tambah Kategori Perusahaan</h3>
         </div>
 
         <div class="row">
@@ -16,7 +15,6 @@
                 <div class="ls-widget">
                     <div class="tabs-box">
                         <div class="widget-title">
-                            <h4>Create Category</h4>
                         </div>
 
                         <div class="widget-content">
@@ -37,8 +35,8 @@
                                         @enderror
                                     </div>
                                     <div class="form-group col-lg-12 col-md-12">
-                                        <label>Job Slug</label>
-                                        <input type="text" name="slug" id="slug" placeholder="Slug"
+                                        <label>Deskripsi Nama</label>
+                                        <input type="text" name="slug" id="slug" placeholder="Deskripsi Nama"
                                             value="{{ old('slug') }}">
                                         @error('slug')
                                         <div class="text-danger">

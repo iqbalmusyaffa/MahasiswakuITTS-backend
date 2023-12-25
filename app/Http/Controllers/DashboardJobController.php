@@ -64,7 +64,7 @@ class DashboardJobController extends Controller
             $validatedData['image'] = $request->file('image')->store('image-job');
         }
         Jobs::create($validatedData);
-        return redirect('/dashboard/job')->with('success', 'New job has been added!');
+        return redirect('/dashboard/job')->with('success', 'Pekerjaan Baru telah ditambah');
     }
 
     /**
@@ -140,7 +140,7 @@ class DashboardJobController extends Controller
         // Update the job with the validated data
         $job->update($validatedData);
 
-        return redirect('/dashboard/job')->with('success', 'Job has been updated!');
+        return redirect('/dashboard/job')->with('success', 'Pekerjaan Baru telah diedit');
     }
 
     /**
@@ -153,7 +153,7 @@ class DashboardJobController extends Controller
     {
 
         Jobs::destroy($job->id);
-        return redirect('/dashboard/job')->with('success', ' Post has been deleted!');
+        return redirect('/dashboard/job')->with('success', ' Pekerjaan Baru telah dihapus');
     }
     public function checkSlug(Request $request)
     {

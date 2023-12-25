@@ -17,11 +17,11 @@
                             <span class="display-4">{{ $company->name }}
                             </span>
                             @if($company->status == '1')
-                            <small class="d-inline text-success">Featured</small>
+                            <small class="d-inline text-success">Fitur</small>
                             @endif
                         </div>
                         <ul class="job-other-info">
-                            <li class="time">Open Jobs – {{$company->job->count() }}</li>
+                            <li class="time">Buka Pekerjaan – {{$company->job->count() }}</li>
                         </ul>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="content-column col-lg-8 col-md-12 col-sm-12 order-2">
                     <div class="job-detail">
-                        <h4>About Company</h4>
+                        <h4>Deskripsi Perusahaan</h4>
                         {!! $company->body !!}
                     </div>
 
@@ -42,7 +42,7 @@
                     <div class="related-jobs">
                         <div class="title-box">
                             <h3>{{ count($company->job) }} jobs at {{ $company->name }}</h3>
-                            <div class="text">2020 jobs live - 293 added today.</div>
+                            <div class="text">2021 jobs live - 293 added today.</div>
                         </div>
 
                         <!-- Job Block -->
@@ -55,8 +55,6 @@
                                             alt=""></span>
                                     <h4><a href="/job/{{ $item->slug }}">{{ $item->title }}</a></h4>
                                     <ul class="job-info">
-                                        <li><span class="icon flaticon-briefcase"></span> {{ $item->category->name }}
-                                        </li>
                                         <li><span class="icon flaticon-map-locator"></span> {{ $item->location }}</li>
                                         <li><span class="icon flaticon-clock-3"></span> {{
                                             $item->created_at->diffForHumans() }}</li>
@@ -81,9 +79,9 @@
                             <div class="widget-content">
                                 <ul class="company-info mt-0">
                                     <li>Kategori: <span>{{ $company->companycategory->name }}</span></li>
-                                    <li>Phone: <span>{{ $company->phone_number }}</span></li>
+                                    <li>Nomor Hp: <span>{{ $company->phone_number }}</span></li>
                                     <li>Email: <span>{{ $company->email }}</span></li>
-                                    <li>Location: <span>{{ $company->location }}</span></li>
+                                    <li>Lokasi: <span>{{ $company->location }}</span></li>
                                     <li>Social media:
                                         <div class="social-links">
                                             @if ($company->social_facebook )

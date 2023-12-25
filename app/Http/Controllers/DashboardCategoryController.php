@@ -44,7 +44,7 @@ class DashboardCategoryController extends Controller
         ]);
 
         Category::create($validateData);
-        return redirect('dashboard/category')->with('success', 'Category has been Added!');
+        return redirect('dashboard/category')->with('success', 'Kategori telah ditambahkan');
     }
 
     /**
@@ -86,7 +86,7 @@ class DashboardCategoryController extends Controller
         ]);
 
         Category::where('id', $category->id)->update($validateData);
-        return redirect('/dashboard/category')->with('success', 'Category has been Updated!');
+        return redirect('/dashboard/category')->with('success', 'Kategori Telah Terupdate');
     }
 
     /**
@@ -101,6 +101,6 @@ class DashboardCategoryController extends Controller
             Jobs::where('category_id', $category->id)->update(['category_id' => 7]);
         }
         Category::destroy('id', $category->id);
-        return redirect('/dashboard/category')->with('success', 'Category has been Deleted!');
+        return redirect('/dashboard/category')->with('success', 'Kategori Telah dihapus');
     }
 }

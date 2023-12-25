@@ -63,7 +63,7 @@ class DashboardCompanyController extends Controller
             $validatedData['logo'] = $request->file('logo')->store('logo-company');
         }
         Company::create($validatedData);
-        return redirect('/dashboard/company')->with('success', 'Company has been Added!');
+        return redirect('/dashboard/company')->with('success', 'Data Perusahaan Telah ditambah');
     }
 
     /**
@@ -130,7 +130,7 @@ class DashboardCompanyController extends Controller
 
 
         Company::where('id', $company->id)->update($validatedData);
-        return redirect('/dashboard/company')->with('success', 'Company has been updated!');
+        return redirect('/dashboard/company')->with('success', 'Data Perusahaan Telah diedit');
     }
 
     /**
@@ -145,6 +145,6 @@ class DashboardCompanyController extends Controller
             Storage::delete($company->logo);
         }
         Company::destroy($company->id);
-        return redirect('/dashboard/company')->with('success', ' Company has been deleted!');
+        return redirect('/dashboard/company')->with('success', ' Data Perusahaan Telah dihapus');
     }
 }

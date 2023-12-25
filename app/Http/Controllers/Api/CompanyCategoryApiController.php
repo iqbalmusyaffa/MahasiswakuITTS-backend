@@ -18,7 +18,7 @@ class CompanyCategoryApiController extends Controller
         $category = CompanyCategory::find($id);
 
         if (!$category) {
-            return response()->json(['error' => 'Category not found'], 404);
+            return response()->json(['error' => 'KategoriPerusahaan Tidak ada'], 404);
         }
 
         return $category;
@@ -33,7 +33,7 @@ class CompanyCategoryApiController extends Controller
 
         $category = CompanyCategory::create($validatedData);
 
-        return response()->json(['message' => 'Category created successfully', 'data' => $category], 201);
+        return response()->json(['message' => 'KategoriPerusahaan Telah ditambahkan', 'data' => $category], 201);
     }
 
     public function update(Request $request, $id)
@@ -46,12 +46,12 @@ class CompanyCategoryApiController extends Controller
         $category = CompanyCategory::find($id);
 
         if (!$category) {
-            return response()->json(['error' => 'Category not found'], 404);
+            return response()->json(['error' => 'KategoriPerusahaan Tidak ada'], 404);
         }
 
         $category->update($validatedData);
 
-        return response()->json(['message' => 'Category updated successfully', 'data' => $category]);
+        return response()->json(['message' => 'KategoriPerusahaan Telah diedit', 'data' => $category]);
     }
 
     public function destroy($id)
@@ -59,11 +59,11 @@ class CompanyCategoryApiController extends Controller
         $category = CompanyCategory::find($id);
 
         if (!$category) {
-            return response()->json(['error' => 'Category not found'], 404);
+            return response()->json(['error' => 'KategoriPerusahaan Tidak ada'], 404);
         }
 
         $category->delete();
 
-        return response()->json(['message' => 'Category deleted successfully']);
+        return response()->json(['message' => 'KategoriPerusahaan Telah dihapus']);
     }
 }

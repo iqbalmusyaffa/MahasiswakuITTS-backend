@@ -5,7 +5,7 @@
 <section class="user-dashboard">
     <div class="dashboard-outer">
         <div class="upper-title-box">
-            <h3>{{ auth()->user()->name }}</h3>
+            <h3>Halo {{ auth()->user()->name }}</h3>
             <div class="text"></div>
         </div>
         <div class="row">
@@ -16,7 +16,7 @@
                     </div>
                     <div class="right">
                         <h4>{{ count($job) }}</h4>
-                        <p>Lowongan Pekerjaan</p>
+                        <p>Lowongan Pekerjaan dan Magang</p>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                     </div>
                     <div class="right">
                         <h4>{{ count($category) }}</h4>
-                        <p>Kategori Lowongan Pekerjaan</p>
+                        <p>Kategori</p>
                     </div>
                 </div>
             </div>

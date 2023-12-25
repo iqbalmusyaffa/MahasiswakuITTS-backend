@@ -45,7 +45,7 @@ class DashboardCompanyCategoryController extends Controller
         ]);
 
         CompanyCategory::create($validateData);
-        return redirect('dashboard/companycategory')->with('success', 'Category has been Added!');
+        return redirect('dashboard/companycategory')->with('success', 'KategoriPerusahaan Telah ditambah');
     }
 
     /**
@@ -87,7 +87,7 @@ class DashboardCompanyCategoryController extends Controller
             'slug' => 'required|unique:company_categories,slug,' . $companycategory->id
         ]);
         CompanyCategory::where('id', $companycategory->id)->update($validateData);
-        return redirect('/dashboard/companycategory')->with('success', 'Category has been Updated!');
+        return redirect('/dashboard/companycategory')->with('success', 'KategoriPerusahaan Telah diedit');
     }
 
     /**
@@ -102,6 +102,6 @@ class DashboardCompanyCategoryController extends Controller
             Company::where('companycategory_id', $companycategory->id)->update(['companycategory_id' => 5]);
         }
         CompanyCategory::destroy('id', $companycategory->id);
-        return redirect('/dashboard/companycategory')->with('success', 'Category has been Deleted!');
+        return redirect('/dashboard/companycategory')->with('success', 'KategoriPerusahaan Telah dihapus');
     }
 }

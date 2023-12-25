@@ -6,8 +6,7 @@
 <section class="user-dashboard">
     <div class="dashboard-outer">
         <div class="upper-title-box">
-            <h3>Update Category!</h3>
-            <div class="text">Ready to jump back in?</div>
+            <h3>Edit Kategori</h3>
         </div>
 
         <div class="row">
@@ -16,7 +15,6 @@
                 <div class="ls-widget">
                     <div class="tabs-box">
                         <div class="widget-title">
-                            <h4>Update Category</h4>
                         </div>
 
                         <div class="widget-content">
@@ -28,8 +26,8 @@
                                 <div class="row">
                                     <!-- Input -->
                                     <div class="form-group col-lg-12 col-md-12">
-                                        <label>Name</label>
-                                        <input type="text" name="name" id="title" placeholder="Title"
+                                        <label>Nama Kategori</label>
+                                        <input type="text" name="name" id="title" placeholder="Nama Kategori"
                                             value="{{ old('name',$category->slug) }}">
                                         @error('name')
                                         <div class="text-danger">
@@ -38,8 +36,8 @@
                                         @enderror
                                     </div>
                                     <div class="form-group col-lg-12 col-md-12">
-                                        <label>Job Slug</label>
-                                        <input type="text" name="slug" id="slug" placeholder="Slug"
+                                        <label> Details Kategori</label>
+                                        <input type="text" name="slug" id="slug" placeholder="Details Kategori"
                                             value="{{ old('slug',$category->slug) }}">
 
                                         @error('slug')
@@ -51,7 +49,7 @@
 
                                     <!-- Input -->
                                     <div class="form-group col-lg-12 col-md-12 text-right">
-                                        <button class="theme-btn btn-style-one">Next</button>
+                                        <button class="theme-btn btn-style-one">Submit</button>
                                     </div>
                                 </div>
                             </form>
