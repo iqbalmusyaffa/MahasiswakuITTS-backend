@@ -6,8 +6,7 @@
 <section class="user-dashboard">
     <div class="dashboard-outer">
         <div class="upper-title-box">
-            <h3>Add New Company!</h3>
-            <div class="text">Ready to jump back in?</div>
+            <h3>Tambah Perusahaan</h3>
         </div>
 
         <div class="row">
@@ -16,7 +15,7 @@
                 <div class="ls-widget">
                     <div class="tabs-box">
                         <div class="widget-title">
-                            <h4>Post Company</h4>
+                            <h4>Perusahaan Posting</h4>
                         </div>
 
                         <div class="widget-content">
@@ -27,7 +26,7 @@
                                 <div class="row">
                                     <!-- Input -->
                                     <div class="form-group col-lg-12 col-md-12">
-                                        <label>Company Name</label>
+                                        <label>Nama Perusahaan</label>
                                         <input type="text" name="name" id="title" placeholder="Title"
                                             value="{{ old('name') }}">
                                         @error('name')
@@ -37,8 +36,8 @@
                                         @enderror
                                     </div>
                                     <div class="form-group col-lg-12 col-md-12">
-                                        <label>Company Slug</label>
-                                        <input type="text" name="slug" id="slug" placeholder="Slug"
+                                        <label>Deskripsi</label>
+                                        <input type="text" name="slug" id="slug" placeholder="Deskripsi"
                                             value="{{ old('slug') }}">
                                         @error('slug')
                                         <div class="text-danger">
@@ -49,7 +48,7 @@
 
                                     <!-- About Company -->
                                     <div class="form-group col-lg-12 col-md-12">
-                                        <label>About Company</label>
+                                        <label>Deskripsi Perusahaan</label>
                                         @error('body')
                                         <p class="text-danger">{{ $message }}</p>
                                         @enderror
@@ -61,14 +60,14 @@
                                         <img class="img-preview img-fluid mb-3 col-lg-5">
                                     </div>
                                     <div class="form-group col-lg-6 col-md-12">
-                                        <label>Logo Company</label>
+                                        <label>Logo Perusahaan</label>
                                         <input type="file" id="image" name="logo" class="form-control"
                                             onchange="previewImage()">
                                     </div>
 
                                     <!-- Input -->
                                     <div class="form-group col-lg-6 col-md-12">
-                                        <label>Location</label>
+                                        <label>Lokasi</label>
                                         <input type="text" name="location" placeholder="Location"
                                             value="{{ old('location') }}">
                                         @error('location')
@@ -90,7 +89,7 @@
                                     </div>
                                     <!-- Input -->
                                     <div class="form-group col-lg-6 col-md-12">
-                                        <label>Phone Number</label>
+                                        <label>No hp</label>
                                         <input type="text" name="phone_number" placeholder="08123456789"
                                             value="{{ old('phone_number') }}">
                                         @error('phone_number')
@@ -160,7 +159,7 @@
 
                                     {{-- input --}}
                                     <div class="form-group col-lg-6 col-md-12">
-                                        <label>Category</label>
+                                        <label>Kategori</label>
                                         <select class="chosen-select" name="companycategory_id">
                                             <option selected disabled>select category</option>
                                             @foreach($companycategories as $item)
@@ -180,7 +179,7 @@
 
                                     {{-- input --}}
                                     <div class="form-group col-lg-6 col-md-12">
-                                        <label>Status Company</label>
+                                        <label>Status Perusahaan</label>
                                         <select class="chosen-select" name="status">
                                             <option value="0" {{ old('status')=='0' ? 'selected' : '' }}>
                                                 Non Featured

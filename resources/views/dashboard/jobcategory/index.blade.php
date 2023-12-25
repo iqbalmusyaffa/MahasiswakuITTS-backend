@@ -31,7 +31,7 @@
                                     <thead>
                                         <tr>
                                             <th>Nama kategori</th>
-                                            <th>Action</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
 

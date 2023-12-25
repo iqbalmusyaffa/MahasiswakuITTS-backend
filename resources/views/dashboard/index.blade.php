@@ -5,7 +5,7 @@
 <section class="user-dashboard">
     <div class="dashboard-outer">
         <div class="upper-title-box">
-            <h3>{{ auth()->user()->name }}</h3>
+            <h3>Halo {{ auth()->user()->name }}</h3>
             <div class="text"></div>
         </div>
         <div class="row">

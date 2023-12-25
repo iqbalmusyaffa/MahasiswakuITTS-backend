@@ -6,8 +6,7 @@
 <section class="user-dashboard">
     <div class="dashboard-outer">
         <div class="upper-title-box">
-            <h3>Update Job!</h3>
-            <div class="text">Ready to jump back in?</div>
+            <h3>Edit Pekerjaan</h3>
         </div>
 
         <div class="row">
@@ -16,7 +15,6 @@
                 <div class="ls-widget">
                     <div class="tabs-box">
                         <div class="widget-title">
-                            <h4>Post Job</h4>
                         </div>
 
                         <div class="widget-content">
@@ -28,8 +26,8 @@
                                 <div class="row">
                                     <!-- Input -->
                                     <div class="form-group col-lg-12 col-md-12">
-                                        <label>Job Title</label>
-                                        <input type="text" name="title" id="title" placeholder="Title"
+                                        <label>Judul Pekerjaan</label>
+                                        <input type="text" name="title" id="title" placeholder="Judul Pekerjaan"
                                             value="{{ old('title',$job->title) }}">
                                         @error('title')
                                         <div class="text-danger">
@@ -38,8 +36,8 @@
                                         @enderror
                                     </div>
                                     <div class="form-group col-lg-12 col-md-12">
-                                        <label>Job Slug</label>
-                                        <input type="text" name="slug" id="slug" placeholder="Slug"
+                                        <label>Kategori</label>
+                                        <input type="text" name="slug" id="slug" placeholder="kategori"
                                             value="{{ old('slug',$job->slug) }}">
                                         @error('slug')
                                         <div class="text-danger">
@@ -50,7 +48,7 @@
 
                                     <!-- About Company -->
                                     <div class="form-group col-lg-12 col-md-12">
-                                        <label>Job Description</label>
+                                        <label>Deskripsi Pekerjaan</label>
                                         @error('body')
                                         <p class="text-danger">{{ $message }}</p>
                                         @enderror
@@ -70,13 +68,13 @@
                                     </div>
                                     <div class="form-group col-lg-6 col-md-12">
                                         <input type="hidden" name="oldImage" value="{{ $job->image }}">
-                                        <label>Image</label>
+                                        <label>Gambar</label>
                                         <input type="file" id="image" name="image" class="form-control"
                                             onchange="previewImage()">
                                     </div>
                                     <!-- Input -->
                                     <div class="form-group col-lg-6 col-md-12">
-                                        <label>Expiration Date</label>
+                                        <label>Tanggal Habis</label>
                                         <input type="date" name="expiration_date" placeholder="01/01/2022"
                                             class="form-control "
                                             value="{{ old('expiration_date',$job->expiration_date) }}">
@@ -89,7 +87,7 @@
 
                                     <!-- Input -->
                                     <div class="form-group col-lg-6 col-md-12">
-                                        <label>Location</label>
+                                        <label>Lokasi</label>
                                         <input type="text" name="location" placeholder="Location"
                                             value="{{ old('location',$job->location) }}">
                                         @error('location')
@@ -101,7 +99,7 @@
 
                                     {{-- company --}}
                                     <div class="form-group col-lg-6 col-md-12">
-                                        <label>Company</label>
+                                        <label>Perusahaan</label>
 
                                         <select class="chosen-select" name="company_id">
                                             @foreach($companies as $item)
@@ -121,7 +119,7 @@
 
                                     {{-- input --}}
                                     <div class="form-group col-lg-6 col-md-12">
-                                        <label>Level Career</label>
+                                        <label>Level Karir</label>
                                         <input type="text" name="level_career" placeholder="Senior"
                                             value="{{ old('level_career',$job->level_career) }}">
                                         @error('level_career')
@@ -134,7 +132,7 @@
 
 
                                     <div class="form-group col-lg-6 col-md-12">
-                                        <label>Job Type</label>
+                                        <label>Tipe Pekerjaan</label>
                                         <select class="chosen-select" name="type">
                                             <option value="Fulltime" {{ old('type',$job->type)=='Fulltime' ? 'selected'
                                                 : '' }}>
@@ -160,7 +158,7 @@
 
                                     <!-- Input -->
                                     <div class="form-group col-lg-6 col-md-12">
-                                        <label>Salary</label>
+                                        <label>Gaji</label>
                                         <input type="text" name="salary" placeholder=" Rp5.000.000 - Rp10.000.000"
                                             value="{{ old('salary',$job->salary) }}">
                                         @error('salary')
@@ -171,7 +169,7 @@
                                     </div>
 
                                     <div class="form-group col-lg-6 col-md-12">
-                                        <label>Category</label>
+                                        <label>Kategori</label>
                                         <select class="chosen-select" name="category_id">
 
                                             @foreach($categories as $category)
@@ -191,7 +189,7 @@
 
                                     <!-- Input -->
                                     <div class="form-group col-lg-12 col-md-12 text-right">
-                                        <button class="theme-btn btn-style-one">Next</button>
+                                        <button class="theme-btn btn-style-one">SUbmit</button>
                                     </div>
                                 </div>
                             </form>

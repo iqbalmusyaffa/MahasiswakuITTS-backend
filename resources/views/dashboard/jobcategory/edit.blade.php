@@ -49,7 +49,7 @@
 
                                     <!-- Input -->
                                     <div class="form-group col-lg-12 col-md-12 text-right">
-                                        <button class="theme-btn btn-style-one">Next</button>
+                                        <button class="theme-btn btn-style-one">Submit</button>
                                     </div>
                                 </div>
                             </form>

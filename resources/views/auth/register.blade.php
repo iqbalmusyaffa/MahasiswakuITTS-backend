@@ -27,6 +27,27 @@
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control @error('nim') is-invalid @enderror" id="nim"
+                        name="nim" placeholder="11204210011" value="{{ old('nim') }}" required
+                        autocomplete="nim">
+
+                    <label for="nim">NIM</label>
+                    @error('nim')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control @error('programstudi') is-invalid @enderror" id="programstudi"
+                        name="programstudi" placeholder="Program Studi" value="{{ old('programstudi') }}" required
+                        autocomplete="programstudi">
+
+                    <label for="programstudi">Program Studi</label>
+                    @error('programstudi')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+
 
                 <div class="form-floating">
                     <input type="password" class="form-control rounded-bottom @error('password') is-invalid @enderror"

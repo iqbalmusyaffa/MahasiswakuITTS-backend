@@ -14,9 +14,7 @@
                                 <div class="content">
                                     <h4>{{ $job->title }}</h4>
                                     <ul class="job-info">
-                                        <li><span class="icon flaticon-briefcase"></span> {{
-                                            ucfirst($job->category->name) }}
-                                        </li>
+
                                         <li><span class="icon flaticon-map-locator"></span> {{ $job->location }}</li>
                                         <li><span class="icon flaticon-clock-3"></span> {{
                                             $job->created_at->diffForHumans() }}</li>
@@ -52,28 +50,28 @@
                                 <ul class="job-overview">
                                     <li>
                                         <i class="icon icon-calendar"></i>
-                                        <h5>Date Posted:</h5>
-                                        <span>Posted {{ $job->created_at->diffForHumans() }}</span>
+                                        <h5>Tanggal di posting:</h5>
+                                        <span>Posting {{ $job->created_at->diffForHumans() }}</span>
                                     </li>
                                     <li>
                                         <i class="icon icon-expiry"></i>
-                                        <h5>Expiration date:</h5>
+                                        <h5>Tanggal Habis:</h5>
                                         <span>{{date('d F Y',strtotime( $job->expiration_date)) }}</span>
                                     </li>
                                     <li>
                                         <i class="icon icon-location"></i>
-                                        <h5>Location:</h5>
+                                        <h5>Lokasi:</h5>
                                         <span>{{ $job->location }}</span>
                                     </li>
                                     <li>
                                         <i class="icon icon-user-2"></i>
-                                        <h5>Level Career:</h5>
+                                        <h5>Level Karir:</h5>
                                         <span>{{ $job->level_career }}</span>
                                     </li>
 
                                     <li>
                                         <i class="icon icon-salary"></i>
-                                        <h5>Salary:</h5>
+                                        <h5>Gaji:</h5>
                                         <span>{{ $job->salary }}</span>
                                     </li>
                                 </ul>
